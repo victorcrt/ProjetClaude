@@ -110,6 +110,17 @@ main {
     text-align: center;
 }
 
+/* Video Section */
+.video-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.full-video {
+    width: 100%;
+    display: block;
+}
+
 .hero-text h1 {
     font-size: 4rem;
     font-weight: 300;
