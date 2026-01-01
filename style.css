@@ -224,6 +224,100 @@ main {
     color: #888;
 }
 
+/* Productions Section */
+.section-productions {
+    padding: 4rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.productions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.production-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.production-card:hover {
+    transform: translateY(-5px);
+}
+
+.production-card .placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.production-card:hover .placeholder {
+    opacity: 0.8;
+}
+
+.production-info {
+    padding: 0.5rem 0;
+}
+
+.production-info h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.production-info p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Team Section */
+.section-team {
+    padding: 4rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover .team-photo img {
+    transform: scale(1.05);
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+}
+
 /* Footer */
 footer {
     background-color: #050505;
@@ -280,8 +374,14 @@ footer {
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .films-grid {
+    .films-grid,
+    .productions-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }
 
@@ -300,8 +400,19 @@ footer {
         font-size: 2rem;
     }
 
-    .films-grid {
+    .films-grid,
+    .productions-grid {
         grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .team-photo {
+        max-width: 250px;
+        margin: 0 auto 1.5rem;
     }
 
     .footer-content {

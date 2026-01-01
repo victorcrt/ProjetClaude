@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site - Films</title>
+    <title>Accueil - Mon Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
         <nav class="main-nav">
             <a href="index.html" class="logo">MONSITE</a>
             <ul class="nav-links">
-                <li><a href="cinema.html" class="active">Cinema</a></li>
+                <li><a href="cinema.html">Cinema</a></li>
                 <li><a href="podcast.html">Podcast</a></li>
                 <li><a href="musique.html">Musique</a></li>
             </ul>
@@ -23,91 +23,58 @@
             <div class="placeholder" id="placeholder-hero" style="background-color: #1a1a2e;"></div>
             <div class="hero-text">
                 <h1>Bienvenue</h1>
-                <p>Explorez notre collection</p>
+                <p>Explorez notre univers</p>
             </div>
         </section>
 
-        <section class="section-upcoming">
-            <h2 class="section-title">A venir</h2>
-            <div class="films-grid">
-                <article class="film-card">
-                    <div class="placeholder" id="placeholder-film-1" style="background-color: #e94560;"></div>
-                    <div class="film-info">
-                        <span class="film-date">Jan 2026</span>
-                        <h3 class="film-title">Titre Film 1</h3>
-                        <p class="film-director">Realisateur 1</p>
+        <section class="section-productions">
+            <h2 class="section-title">Nos productions</h2>
+            <div class="productions-grid">
+                <a href="cinema.html" class="production-card">
+                    <div class="placeholder" id="placeholder-production-cinema" style="background-color: #e94560;"></div>
+                    <div class="production-info">
+                        <h3>Cinema</h3>
+                        <p>Nos films et creations cinematographiques</p>
                     </div>
-                </article>
-                <article class="film-card">
-                    <div class="placeholder" id="placeholder-film-2" style="background-color: #0f3460;"></div>
-                    <div class="film-info">
-                        <span class="film-date">Fev 2026</span>
-                        <h3 class="film-title">Titre Film 2</h3>
-                        <p class="film-director">Realisateur 2</p>
+                </a>
+                <a href="podcast.html" class="production-card">
+                    <div class="placeholder" id="placeholder-production-podcast" style="background-color: #0f3460;"></div>
+                    <div class="production-info">
+                        <h3>Podcast</h3>
+                        <p>Nos emissions et discussions</p>
                     </div>
-                </article>
-                <article class="film-card">
-                    <div class="placeholder" id="placeholder-film-3" style="background-color: #16213e;"></div>
-                    <div class="film-info">
-                        <span class="film-date">Mar 2026</span>
-                        <h3 class="film-title">Titre Film 3</h3>
-                        <p class="film-director">Realisateur 3</p>
+                </a>
+                <a href="musique.html" class="production-card">
+                    <div class="placeholder" id="placeholder-production-musique" style="background-color: #533483;"></div>
+                    <div class="production-info">
+                        <h3>Musique</h3>
+                        <p>Nos compositions et playlists</p>
                     </div>
-                </article>
+                </a>
             </div>
         </section>
 
-        <section class="section-all">
-            <div class="section-header">
-                <h2 class="section-title">Tous les films</h2>
-                <div class="filter-buttons">
-                    <button class="filter-btn active">Recent</button>
-                    <button class="filter-btn">A-Z</button>
+        <section class="section-team">
+            <h2 class="section-title">Notre equipe</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="Team/Hugo.png" alt="Hugo">
+                    </div>
+                    <h3>Hugo</h3>
                 </div>
-            </div>
-            <div class="films-grid">
-                <article class="film-card">
-                    <div class="placeholder" id="placeholder-film-4" style="background-color: #533483;"></div>
-                    <div class="film-info">
-                        <h3 class="film-title">Titre Film 4</h3>
-                        <p class="film-director">Realisateur 4</p>
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="Team/Oscar.png" alt="Oscar">
                     </div>
-                </article>
-                <article class="film-card">
-                    <div class="placeholder" id="placeholder-film-5" style="background-color: #e94560;"></div>
-                    <div class="film-info">
-                        <h3 class="film-title">Titre Film 5</h3>
-                        <p class="film-director">Realisateur 5</p>
+                    <h3>Oscar</h3>
+                </div>
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="Team/Melchior.png" alt="Melchior">
                     </div>
-                </article>
-                <article class="film-card">
-                    <div class="placeholder" id="placeholder-film-6" style="background-color: #0f3460;"></div>
-                    <div class="film-info">
-                        <h3 class="film-title">Titre Film 6</h3>
-                        <p class="film-director">Realisateur 6</p>
-                    </div>
-                </article>
-                <article class="film-card">
-                    <div class="placeholder" id="placeholder-film-7" style="background-color: #1a1a2e;"></div>
-                    <div class="film-info">
-                        <h3 class="film-title">Titre Film 7</h3>
-                        <p class="film-director">Realisateur 7</p>
-                    </div>
-                </article>
-                <article class="film-card">
-                    <div class="placeholder" id="placeholder-film-8" style="background-color: #16213e;"></div>
-                    <div class="film-info">
-                        <h3 class="film-title">Titre Film 8</h3>
-                        <p class="film-director">Realisateur 8</p>
-                    </div>
-                </article>
-                <article class="film-card">
-                    <div class="placeholder" id="placeholder-film-9" style="background-color: #533483;"></div>
-                    <div class="film-info">
-                        <h3 class="film-title">Titre Film 9</h3>
-                        <p class="film-director">Realisateur 9</p>
-                    </div>
-                </article>
+                    <h3>Melchior</h3>
+                </div>
             </div>
         </section>
     </main>
