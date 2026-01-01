@@ -8,18 +8,85 @@
 </head>
 <body>
     <header>
-        <div class="logo"><a href="index.html">Mon Site</a></div>
-        <nav>
-            <ul>
+        <nav class="main-nav">
+            <a href="index.html" class="logo">MONSITE</a>
+            <ul class="nav-links">
                 <li><a href="cinema.html">Cinema</a></li>
                 <li><a href="podcast.html">Podcast</a></li>
                 <li><a href="musique.html" class="active">Musique</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Musique</h1>
-        <p>Mes artistes et playlists du moment.</p>
+        <section class="page-header">
+            <h1>Musique</h1>
+            <p>Mes artistes et playlists du moment</p>
+        </section>
+
+        <section class="section-all">
+            <div class="section-header">
+                <h2 class="section-title">Playlists</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active">Recent</button>
+                    <button class="filter-btn">A-Z</button>
+                </div>
+            </div>
+            <div class="films-grid">
+                <article class="film-card">
+                    <div class="placeholder" id="placeholder-musique-1" style="background-color: #533483;"></div>
+                    <div class="film-info">
+                        <h3 class="film-title">Album 1</h3>
+                        <p class="film-director">Artiste</p>
+                    </div>
+                </article>
+                <article class="film-card">
+                    <div class="placeholder" id="placeholder-musique-2" style="background-color: #0f3460;"></div>
+                    <div class="film-info">
+                        <h3 class="film-title">Album 2</h3>
+                        <p class="film-director">Artiste</p>
+                    </div>
+                </article>
+                <article class="film-card">
+                    <div class="placeholder" id="placeholder-musique-3" style="background-color: #16213e;"></div>
+                    <div class="film-info">
+                        <h3 class="film-title">Album 3</h3>
+                        <p class="film-director">Artiste</p>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="cinema.html">Cinema</a></li>
+                    <li><a href="podcast.html">Podcast</a></li>
+                    <li><a href="musique.html">Musique</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Mentions legales</a></li>
+                    <li><a href="#">Confidentialite</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MonSite. Tous droits reserves.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -3,23 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Mon Site</title>
+    <title>Mon Site - Films</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">Mon Site</div>
-        <nav>
-            <ul>
-                <li><a href="cinema.html">Cinema</a></li>
+        <nav class="main-nav">
+            <a href="index.html" class="logo">MONSITE</a>
+            <ul class="nav-links">
+                <li><a href="cinema.html" class="active">Cinema</a></li>
                 <li><a href="podcast.html">Podcast</a></li>
                 <li><a href="musique.html">Musique</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Bienvenue sur mon site</h1>
-        <p>Explorez mes passions : cinema, podcasts et musique.</p>
+        <section class="hero">
+            <div class="placeholder" id="placeholder-hero" style="background-color: #1a1a2e;"></div>
+            <div class="hero-text">
+                <h1>Bienvenue</h1>
+                <p>Explorez notre collection</p>
+            </div>
+        </section>
+
+        <section class="section-upcoming">
+            <h2 class="section-title">A venir</h2>
+            <div class="films-grid">
+                <article class="film-card">
+                    <div class="placeholder" id="placeholder-film-1" style="background-color: #e94560;"></div>
+                    <div class="film-info">
+                        <span class="film-date">Jan 2026</span>
+                        <h3 class="film-title">Titre Film 1</h3>
+                        <p class="film-director">Realisateur 1</p>
+                    </div>
+                </article>
+                <article class="film-card">
+                    <div class="placeholder" id="placeholder-film-2" style="background-color: #0f3460;"></div>
+                    <div class="film-info">
+                        <span class="film-date">Fev 2026</span>
+                        <h3 class="film-title">Titre Film 2</h3>
+                        <p class="film-director">Realisateur 2</p>
+                    </div>
+                </article>
+                <article class="film-card">
+                    <div class="placeholder" id="placeholder-film-3" style="background-color: #16213e;"></div>
+                    <div class="film-info">
+                        <span class="film-date">Mar 2026</span>
+                        <h3 class="film-title">Titre Film 3</h3>
+                        <p class="film-director">Realisateur 3</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-all">
+            <div class="section-header">
+                <h2 class="section-title">Tous les films</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active">Recent</button>
+                    <button class="filter-btn">A-Z</button>
+                </div>
+            </div>
+            <div class="films-grid">
+                <article class="film-card">
+                    <div class="placeholder" id="placeholder-film-4" style="background-color: #533483;"></div>
+                    <div class="film-info">
+                        <h3 class="film-title">Titre Film 4</h3>
+                        <p class="film-director">Realisateur 4</p>
+                    </div>
+                </article>
+                <article class="film-card">
+                    <div class="placeholder" id="placeholder-film-5" style="background-color: #e94560;"></div>
+                    <div class="film-info">
+                        <h3 class="film-title">Titre Film 5</h3>
+                        <p class="film-director">Realisateur 5</p>
+                    </div>
+                </article>
+                <article class="film-card">
+                    <div class="placeholder" id="placeholder-film-6" style="background-color: #0f3460;"></div>
+                    <div class="film-info">
+                        <h3 class="film-title">Titre Film 6</h3>
+                        <p class="film-director">Realisateur 6</p>
+                    </div>
+                </article>
+                <article class="film-card">
+                    <div class="placeholder" id="placeholder-film-7" style="background-color: #1a1a2e;"></div>
+                    <div class="film-info">
+                        <h3 class="film-title">Titre Film 7</h3>
+                        <p class="film-director">Realisateur 7</p>
+                    </div>
+                </article>
+                <article class="film-card">
+                    <div class="placeholder" id="placeholder-film-8" style="background-color: #16213e;"></div>
+                    <div class="film-info">
+                        <h3 class="film-title">Titre Film 8</h3>
+                        <p class="film-director">Realisateur 8</p>
+                    </div>
+                </article>
+                <article class="film-card">
+                    <div class="placeholder" id="placeholder-film-9" style="background-color: #533483;"></div>
+                    <div class="film-info">
+                        <h3 class="film-title">Titre Film 9</h3>
+                        <p class="film-director">Realisateur 9</p>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="cinema.html">Cinema</a></li>
+                    <li><a href="podcast.html">Podcast</a></li>
+                    <li><a href="musique.html">Musique</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Mentions legales</a></li>
+                    <li><a href="#">Confidentialite</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MonSite. Tous droits reserves.</p>
+        </div>
+    </footer>
 </body>
 </html>
